@@ -41,7 +41,7 @@ export default function ContactForm() {
   return (
     <Box
     display={'flex'} 
-    flexDirection={'row'} 
+    flexDirection={{xs: 'column', md: 'row'}} 
     justifyContent={'center'} 
     mt={'3rem'}
     mx={'10%'}
