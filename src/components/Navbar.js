@@ -23,9 +23,19 @@ const links = [
         active: 'home'
     },
     {
-        name: 'Portfolio',
+        name: 'Projects',
         to: '/portfolio',
         active: 'portfolio'
+    },
+    {
+        name:'My Blogs',
+        to:'/blogs',
+        active:'blogs'
+    },
+    {
+        name:'Contact Me',
+        to:'/contact',
+        active:'contact'
     }
 ]
 
@@ -34,7 +44,7 @@ export default function Navbar({darkMode, handleClick}) {
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
-        <Box component={'nav'} width={'100%'}>
+        <Box component={'nav'} width={'100%'} sx={{marginBottom:2}}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
